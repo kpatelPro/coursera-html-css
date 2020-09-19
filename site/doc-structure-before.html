@@ -5,23 +5,29 @@
 		<title>Title tag is required.</title>
 	</head>
 	<body>
-		<header>
-			My Company (tm) - Leading the way in Companying.
+		<header id="top">
+			My Company (tm) - Leading the way in Companying. (header)
 			<nav>
-				Here is a link.
+				Here is a link. (nav)
 			</nav>
 		</header>
-		<h1>H1 is used for SEO</h1>
-		<section>
-			<h2>H2/Section 1</h2>
+		<h1>Heading H1 is used for SEO (h1)</h1>
+		<section id="section1">
+			<h2>Section 1 (h2/section)</h2>
 			<article>
-				<h3>H3/Paragraph</h3>
+				<h3>Article 1 (h3/article)</h3>
 				<p>
-				Coursera is cool.
+				Coursera is cool. (p)
+				<a href="#section1">Section 1</a> 
+				<a href="#section2">Food</a> 
+				<a href="#section3">Character Entities</a> 
 				</p>
 			</article>
+		</section>
+		<section id="section2">
+			<h2>Food</h2>
 			<article>
-				<h3>H2 Shopping List</h3>
+				<h3>Shopping List (unordered list)</h3>
 				<ul>
 					<li>Turkey</li>
 					<li>Lettuce</li>
@@ -35,21 +41,50 @@
 					<li>Ice Cream</li>
 				</ul>
 			</article>
-		</section>
-		<section>
-			<h2>Section 2</h2>
 			<article>
-				<h3>Article Content 3</h3>
+				<h3>Shopping instructions (ordered list)</h3>
+				<ol>
+					<li>Get in car.</li>
+					<li>Go to store.</li>
+					<li>Shop
+						<ol>
+							<li>Find items.</li>
+							<li>Buy items.</li>
+						</ol>
+					</li>
+					<li>Get in car.</li>
+					<li>Go home.</li>
+				</ol>
 			</article>
 			<article>
 				<h3>Article Content 4</h3>
 			</article>
 		</section>
+		<section id="section3">
+			<h2>Character Entities</h2>
+			<article>
+				<h3>Escaped Characters</h3>
+				<ul>
+					<li>'&lt;' - &amp;lt;</li>
+					<li>'&gt;' - &amp;gt;</li>
+					<li>'&amp;' - &amp;amp;</li>
+					<li>&quot;&amp;quot&quot;</li>
+					<li>Non-Breaking&nbsp;space - &amp;nbsp; - Here is a bunch of text THIS&nbsp;CANNOT&nbsp;WRAP.</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Links</h3>
+				<a href="index.html" title="home">index.html</a>
+				<a href="index.html" title="divvy"><div>div index.html</div></a>
+				<a href="http://facebook.com" target="_blank" title="facebook">Facebook (new tab)</a>
+			</article>
+		</section>
+		<a href="#top">Back to top...</a>
 		<aside>
 			Related Content
 		</aside>
 		<footer>
-			Copyright BB King (2020)
+			Copyright &copy;BB King (2020)
 		</footer>
 	</body>
 </html>
